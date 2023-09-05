@@ -43,13 +43,15 @@ while (true) {
     }
 
     contExit = prompt('Continue or exit?');
+    console.log('Selected:', contExit);
 
     if (contExit === cont1 || contExit === cont2) {
-        console.log('Selected:', cont1);
         continue;
     } else if (contExit === exit1 || contExit === exit2) {
-        console.log('Selected:', exit1);
         alert('Thank you for using our service! Do not forget to take your card.');
         break;
+    } else {
+        alert('There is not enough money in the balance!');
+        console.log('There is not enough money in the balance!');
     }
 }
